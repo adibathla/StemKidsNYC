@@ -1,0 +1,44 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<!--meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1"/-->
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+
+	<title>Create Course {{course_id}} </title>
+
+	<link href="/favicon.ico" rel="icon"/>
+	<link href="apple-favicon.png" rel="apple-touch-icon"/>
+	<link href="css/new_main.css" type="text/css" rel="stylesheet" media="all"/>
+	<link href="css/createcourse.css" type="text/css" rel="stylesheet" media="all"/>
+	<link href="css/semantic-ui/semantic.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="main">
+		<div class="wrapper">
+			<h2> Create a New Course </h2>
+			<p>Course Code: {{course_id}}</p>
+			<form class="ui form" method="post" action="/addLecture">
+  				<div class="field">
+				    <label>Course Title</label>
+				    <input type="text" name="courseTitle" placeholder="Title">
+				</div>
+
+				<div class="field">
+				    <label>Course Summary</label>
+				    <textarea rows="2" placeholder="Summary" name="courseSummary"></textarea>
+				</div>
+				<input name="courseId" type="hidden" value="{{course_id}}">
+				<div id="sbmt">
+					<button class="ui teal button">Submit & Add New Lecture</button>
+				</div>
+          	</form>
+        </div>
+    </div>
+	<script src="css/semantic-ui/semantic.js" type="text/javascript"></script>
+	<script src="js/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>

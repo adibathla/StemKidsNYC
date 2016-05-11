@@ -1,0 +1,25 @@
+#create {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 10px;
+
+
+}
+
+#update {
+	float: right;
+	margin-left: 20px;
+}
+
+#create p, #update p {
+	width: 250px !important;
+}
+
+.admin, #adminbtn {
+	display: inline-block;
+}
+
+#msg {
+	padding-bottom: 1%;
+	font-size: 24px;
+}
